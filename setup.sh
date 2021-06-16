@@ -17,7 +17,7 @@ cd ~/Downloads
 wget https://nodejs.org/dist/v14.17.1/node-v14.17.1-linux-x64.tar.xz
 tar -xf node-v14.17.1-linux-x64.tar.xz
 
-cp -r node-v14.17.1-linux-x64/* ~/.local/
+sudo cp -r node-v14.17.1-linux-x64/* /usr/
 
 wget https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
 tar -xf nightly.tar.gz
