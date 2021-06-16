@@ -3,9 +3,14 @@
 set -e
 
 sudo apt-get update
-sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip -y
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip zsh fonts-powerline python3-pip -y
+sudo apt-get remove vim --autoremove -y
 
-mkdir -p ~/Downloads ~/.config
+sudo python3 -m pip install python-language-server pylint
+
+chsh -s /usr/bin/zsh
+
+mkdir -p ~/Downloads
 
 cd ~/Downloads
 
