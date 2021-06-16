@@ -41,7 +41,6 @@ alias c=clear
 alias vim=nvim
 alias vi=nvim
 alias history='history 1'
-alias npm=/usr/bin/npm
 
 # Needed to ensure that zsh produces history
 HISTFILE=~/.zsh_history

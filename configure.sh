@@ -37,4 +37,12 @@ git clone git@github.com:TechnicalIllusion/nvim.git
 
 nvim +PlugInstall
 
+/usr/bin/python3 -m pip install pynvim
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+
+sudo python2 get-pip.py
+/usr/bin/python2 -m pip install pynvim
+
 mkdir -p $SOURCE
+
+rm -rf ~/Downloads/*night*
