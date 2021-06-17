@@ -46,7 +46,7 @@ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
 /usr/bin/python2 -m pip install pynvim
 
-sudo npm i -g typescript-language-server typescript neovim
+sudo npm i -g typescript-language-server typescript neovim yaml-language-server
 
 mkdir -p $SOURCE
 
