@@ -35,6 +35,7 @@ alias evim=vim\ ~/.config/nvim/init.vim
 alias ezsh=vim\ ~/.zshrc
 alias cdr=cd\ ~/source/git
 alias cdw=cd\ /mnt/c/Users/rober
+alias cdnv=cd\ ~/.config/nvim
 alias flask_env=source\ /home/rcoones/venvs/flask_class/bin/activate
 alias google_env=source\ /home/rcoones/venvs/google_cal/bin/activate
 alias c=clear
