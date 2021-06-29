@@ -36,7 +36,7 @@ cd $CONFIG
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-git clone git@github.com:TechnicalIllusion/nvim.git
+git clone git@github.com:Strik3ria/nvim.git
 
 nvim +PlugInstall
 
@@ -46,7 +46,7 @@ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
 /usr/bin/python2 -m pip install pynvim
 
-sudo npm i -g typescript-language-server typescript neovim yaml-language-server
+sudo npm i -g typescript-language-server typescript neovim
 
 mkdir -p $SOURCE
 
