@@ -51,3 +51,7 @@ sudo npm i -g typescript-language-server typescript neovim
 mkdir -p $SOURCE
 
 rm -rf ~/Downloads/*night*
+
+git config --global user.name "Strik3ria"
+git config --global user.email "robert_coones@zohomail.com"
+git config --global core.editor nvim

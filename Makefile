@@ -5,3 +5,5 @@ setup:
 configure:
 	chmod +x configure.sh
 	./configure.sh
+
+install: setup configure
