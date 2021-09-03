@@ -24,11 +24,11 @@ export ALIEN_SECTIONS_RIGHT=(
 plugins=(zsh-autosuggestions zsh-completions zsh-syntax-highlighting alien)
 
 for plugin in $plugins; do
-        source "/home/rcoones/.zsh/plugins/$plugin/$plugin.plugin.zsh";
+        source "/home/${USER}/.zsh/plugins/$plugin/$plugin.plugin.zsh";
 done
 
 # Singular PATH extender
-PATH=$PATH:/home/rcoones/.local/bin
+PATH=$PATH:~/.local/bin
 
 # General Aliases
 alias evim=vim\ ~/.config/nvim/init.vim
