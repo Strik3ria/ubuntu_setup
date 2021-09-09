@@ -6,7 +6,8 @@ sudo apt-get update
 sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip zsh fonts-powerline python3-pip python2 exuberant-ctags -y
 sudo apt-get remove vim --autoremove -y
 
-sudo python3 -m pip install python-lsp-server pylint
+sudo python3 -m pip install python-lsp-server pylint flake8 mypy pyls-isort \
+python-lsp-black pyls-memestra
 
 chsh -s /usr/bin/zsh
 
