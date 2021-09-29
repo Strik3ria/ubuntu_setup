@@ -16,16 +16,16 @@ mkdir -p ~/Downloads
 
 cd ~/Downloads
 
-wget https://nodejs.org/dist/v14.17.1/node-v14.17.1-linux-x64.tar.xz
-tar -xf node-v14.17.1-linux-x64.tar.xz
+wget https://nodejs.org/dist/v14.18.0/node-v14.18.0-linux-x64.tar.xz
+tar -xf node-v14.18.0-linux-x64.tar.xz
 
-sudo cp -r node-v14.17.1-linux-x64/* /usr/
+sudo cp -r node-v14.18.0-linux-x64/* /usr/
 
-wget https://github.com/neovim/neovim/archive/refs/tags/nightly.tar.gz
-tar -xf nightly.tar.gz
+wget https://github.com/neovim/neovim/archive/refs/tags/v0.5.1.tar.gz
+tar -xf v0.5.1.tar.gz
 
-cd neovim-nightly
-make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd neovim-0.5.1
+make CMAKE_BUILD_TYPE=Release
 sudo make install
 
 nvim --version
