@@ -7,7 +7,8 @@ sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake c
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 sudo apt-get remove vim --autoremove -y
 
-sudo python3 -m pip install python-lsp-server pylint
+sudo python3 -m pip install python-lsp-server pylint flake8 mypy pyls-isort \
+python-lsp-black pyls-memestra
 
 chsh -s /usr/bin/zsh
 
