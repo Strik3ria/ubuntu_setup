@@ -3,7 +3,8 @@
 set -e
 
 sudo apt-get update
-sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip zsh fonts-powerline python3-pip python2 exuberant-ctags -y
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip zsh fonts-powerline python3-pip python2 exuberant-ctags clangd-12 -y
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 sudo apt-get remove vim --autoremove -y
 
 sudo python3 -m pip install python-lsp-server pylint
