@@ -26,6 +26,8 @@ tar -xf node-${NODE_VERSION}-linux-x64.tar.xz
 
 sudo cp -r node-${NODE_VERSION}-linux-x64/* /usr/
 
+rm -rf node*
+
 git clone https://github.com/neovim/neovim
 
 cd neovim
