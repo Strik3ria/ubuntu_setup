@@ -10,22 +10,28 @@ sudo apt-get remove vim --autoremove -y
 sudo python3 -m pip install python-lsp-server pylint flake8 mypy pyls-isort \
 python-lsp-black pyls-memestra
 
+sudo python3 -m pip uninstall tomli
+sudo python3 -m pip install 'tomli<2.0.0,>=0.2.6'
+
 chsh -s /usr/bin/zsh
 
 mkdir -p ~/Downloads
 
 cd ~/Downloads
 
-wget https://nodejs.org/dist/v14.18.0/node-v14.18.0-linux-x64.tar.xz
-tar -xf node-v14.18.0-linux-x64.tar.xz
+NODE_VERSION='v16.13.2'
 
-sudo cp -r node-v14.18.0-linux-x64/* /usr/
+wget https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.xz
+tar -xf node-${NODE_VERSION}-linux-x64.tar.xz
 
-wget https://github.com/neovim/neovim/archive/refs/tags/v0.5.0.tar.gz
-tar -xf v0.5.0.tar.gz
+sudo cp -r node-${NODE_VERSION}-linux-x64/* /usr/
 
-cd neovim-0.5.0
+git clone https://github.com/neovim/neovim
+
+cd neovim
 make CMAKE_BUILD_TYPE=Release
 sudo make install
+
+cd .. && rm -rf neovim
 
 nvim --version
