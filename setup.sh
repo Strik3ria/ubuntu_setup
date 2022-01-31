@@ -8,11 +8,11 @@ sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 sudo apt-get remove vim --autoremove -y
 
 sudo python3 -m pip install python-lsp-server pylint flake8 mypy pyls-isort \
-python-lsp-black pyls-memestra
+pyls-memestra
 
 sudo python3 -m pip uninstall tomli
 sudo python3 -m pip install 'tomli<2.0.0,>=0.2.6'
-
+sudo python3 -m pip install python-lsp-black
 chsh -s /usr/bin/zsh
 
 mkdir -p ~/Downloads
