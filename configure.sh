@@ -53,6 +53,5 @@ mkdir -p $SOURCE
 
 rm -rf ~/Downloads/*night* ~/Downloads/node*
 
-git config --global user.name "Strik3ria"
 git config --global user.email "robert_coones@zohomail.com"
 git config --global core.editor nvim
